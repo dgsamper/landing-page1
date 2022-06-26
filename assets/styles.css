@@ -1,0 +1,162 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@500&display=swap');
+
+:root {
+    --grey: #262626;
+    --white: #f2f2f2;
+    --purple: #8707ff;
+    font-family: 'Rajdhani', sans-serif;
+
+}
+
+body {
+    background-color: var(--grey);
+    color: var(--white);
+    max-width: 1280px;
+    min-height: 720px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#logo {
+    flex-direction: column;
+    line-height: 5px;
+    cursor: pointer;
+}
+
+#logo:hover {
+    color:var(--purple);
+    transition: 0.5s ease-in-out;
+}
+
+#logo h1 {
+    font-weight: 200;
+    font-size: 4rem;
+}
+
+
+#left-container h1 {
+    font-weight: 150;
+    font-size: 3rem;
+    color: var(--purple);
+    line-height: 1px;
+    margin-top: 10rem;
+}
+
+
+#left-container h2 {
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+#left-container {
+    height: 500px;
+    width: 1000px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    top: 2rem;
+}
+
+form input:nth-child(2){
+    position: relative;
+    top: 1rem;
+}
+
+form input:nth-child(3){
+    position: relative;
+    top: 2rem;
+}
+
+a {
+    text-decoration: none;
+    color: var(--purple);
+}
+
+a:hover {
+    color: white;
+    transition: 0.5s ease-in-out;
+}
+
+li {
+    display: inline-block;
+    margin: 20px;
+    font-size: 2rem;
+}
+
+ul a:nth-child(5) {
+    background: transparent;
+    border-radius: 10%;
+    padding: 15px;
+    color: white;
+     
+}
+
+ul a:nth-child(5):hover {
+    color: black;
+}
+
+main {
+    display: flex;
+    flex-direction: row;
+    margin-top: 50px;
+}
+
+#right-container {
+    height: 500px;
+    width: 700px;
+    
+}
+
+.input {
+    color: var(--purple);
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    padding: 10px 25px;
+    background: transparent;
+}
+   
+.input:active {
+    box-shadow: 2px 2px 15px var(--purple) inset;
+}
+
+.button {
+    position: relative;
+    display: inline-block;
+    padding: 15px 30px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    text-decoration: none;
+    color: var(--purple);
+    background: transparent;
+    cursor: pointer;
+    border: 2px solid var(--purple);
+    border-radius: 10px;
+    box-shadow: inset 0 0 0 0 var(--purple);
+    transition: 0.5s ease-in-out;
+
+}
+  
+.button:hover {
+    color: white;
+    box-shadow: inset 0 -100px 0 0 var(--purple);
+    transition: 0.5s ease-in-out;
+}
+  
+.button:active {
+    transform: scale(0.9);
+}
+
+img {
+    height: 800px;   
+}
